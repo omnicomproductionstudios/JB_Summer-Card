@@ -1,0 +1,197 @@
+body,
+body * {
+  border: 0;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  border: 0;
+}
+
+button,
+div,
+img,
+svg,
+video {
+  position: absolute;
+}
+
+#main_container {
+  position: absolute;
+  background-color: #000069;
+  border: 1px solid #000000;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 728px;
+  height: 90px;
+}
+
+#main_content {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 728px;
+  height: 90px;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+#default_exit {
+  top: -1px;
+  left: -1px;
+  width: 728px;
+  height: 90px;
+  z-index: 500;
+  cursor: pointer;
+}
+
+
+:focus {
+  outline: 0;
+}
+
+::-moz-focus-inner {
+  border: 0;
+}
+
+/* Custom Styling */
+
+/* Fonts */
+@font-face {
+  font-family: "ESKlarheitGrotesk Smbd";
+  src: url("./fonts/ESKlarheitGrotesk-Smbd.woff");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "ESKlarheitGrotesk Xbd";
+  src: url("./fonts/ESKlarheitGrotesk-Xbd.woff");
+  font-weight: normal;
+}
+
+
+.full-width{
+  width: 728px;
+  height: 90px;
+}
+.bg{
+  width: 176px;
+}
+.copy1, .copy2, .copy3, .copy4{
+  font-family: "ESKlarheitGrotesk Xbd";
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  letter-spacing: -0.1px;
+  will-change: transform;
+  position: absolute;
+}
+.copy1 > *, .copy2 > *, .copy3 > *{
+  width: 100%;
+}
+.copy1 .line1{
+  top: 33px;
+  left: 201px;
+  font-size: 16.2px;
+}
+.copy1 .line2{
+  top: 48.4px;
+  left: 163px;
+  font-size: 17.2px;
+  letter-spacing: -0.8px;
+}
+.copy2 .line1{
+  top: 27px;
+  left: 201px;
+  font-size: 16.2px;
+  line-height: 18px;
+}
+.copy2 .line1 span{
+  color: #00e1ff;
+}
+.copy3 .line1{
+  top: 27px;
+  left: 201px;
+  font-size: 16.2px;
+  line-height: 18px;
+}
+.copy3 .line1 span, .copy4 span{
+  color: #00e1ff;
+}
+.copy4{
+  top: 26px;
+  left: 34px;
+  font-size: 16.3px;
+  line-height: 18px;
+}
+#cta{
+  font-family: "ESKlarheitGrotesk Smbd";
+  background-color: #00e1ff;
+  display: inline-block;
+  font-size: 11px;
+  top: 27px;
+  left: 309px;
+  width: 110px;
+  height: 36px;
+  color: #000069;
+  text-align: center;
+  line-height: 35px;
+
+  border-radius: 3px;
+}
+
+#card1{
+  width: 96px;
+  left: 503px;
+  top: 13px;
+}
+.last-frame{
+  width: 100%;
+  height: 90px;
+  background-color: #000069;
+  transform: translateX(728px);
+  will-change: transform;
+}
+.term{
+  font-family: "ESKlarheitGrotesk Smbd";
+  color: #ffffff;
+  width: 100%;
+  font-size: 5.40px;
+  top: 77px;
+  left: 566px;
+}
+#termlast{
+  color:#0000aa;
+  left: 537px;
+}
+
+/* Shine effect */
+#shine {
+  top: 0px;
+  left: 0px;
+  width: 728px;
+  height: 90px;
+  background-image: url(./images/shine.png);
+  background-position: 160px 5px;
+  background-repeat: no-repeat;
+  position: absolute;
+  mix-blend-mode: soft-light;
+  -webkit-mask-image: url(./images/mask.png);
+  -webkit-mask-size: 728px 90px;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-image: url(./images/mask.png);
+  z-index: 1;
+}
+#card, #logo, #cta, #term{
+  z-index: 1;
+}
