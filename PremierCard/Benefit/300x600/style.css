@@ -197,6 +197,11 @@ video {
   z-index: 1;
   mask-size: 300px;
 }
+#logo{
+  width: 149px;
+  top: 544px;
+  left: 21px;
+}
 #card2, #logo, #cta{
   z-index: 1;
 }
