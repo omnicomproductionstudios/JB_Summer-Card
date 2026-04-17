@@ -80,7 +80,7 @@ video {
   width: 300px;
   height: 600px;
 }
-.copy1, .copy2, .copy3{
+.copy1, .copy2, .copy3, .copy4{
   font-family: "ESKlarheitGrotesk Xbd";
   color: #fff;
   width: 100%;
@@ -100,6 +100,13 @@ video {
   line-height: 45px;
   letter-spacing: -0.1px;
 }
+.copy3{
+  top: 54px;
+  left: 28px;
+  font-size: 29.3px;
+  line-height: 36px;
+  letter-spacing: -0.1px;
+}
 
 .last-frame{
   width: 100%;
@@ -108,7 +115,7 @@ video {
   transform: translateY(600px);
   will-change: transform;
 }
-.copy3{
+.copy4{
   font-family: "ESKlarheitGrotesk Xbd";
   width: 100%;
   top: 55.5px;

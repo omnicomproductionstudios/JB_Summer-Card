@@ -16,17 +16,22 @@ function init() {
   setRollover();
 }
 function animate() {
-  tl.set(["#main_content"], { autoAlpha: 1, force3D: true });
-  tl.set('#copy2', {y: 20})
+ tl.set(["#copy2", "#copy3", "#copy4", "#cta"], { y: 20, autoAlpha: 0 });
 
-  .addLabel('frame1', 0)
-    .to('#copy1', 1, {autoAlpha: 1, ease: Power1.easeInOut}, 'frame1')
-    .to(['#copy1, #term1'], 0.5, {autoAlpha: 0, ease: Power1.easeInOut}, 'frame1+=3.5')
-    .to('#copy2', 1, {y: 0, autoAlpha: 1, ease: Power1.easeInOut}, 'frame1+=3.7')
-  .addLabel('frame2', 8.5)
-    .to(['#copy2, #card, #logo, #term'], 0.5, {autoAlpha: 0, ease: Power1.easeInOut}, 'frame2')
-    .to('#lastFrame',0.5,{x: 0, ease: Power1.easeInOut}, 'frame2')
-    .to('#shine', 0.5, {backgroundPosition: '535px 0px'}, 'frame2+=1');
+  tl.addLabel("frame1", 0)
+    .to(copy1, 1, { autoAlpha: 1, ease: "power1.inOut" }, "frame1")
+    .to(copy1, 0.5, { autoAlpha: 0, ease: "power1.inOut" }, "frame1+=3.5")
+    .addLabel("frame2", "frame1+=4")
+    .to(copy2, 1, { y: 0, autoAlpha: 1, ease: "power3.out" }, "frame2")
+    .to(copy2, 0.5, { autoAlpha: 0, ease: "power1.inOut" }, "frame2+=3.5")
+    .addLabel("frame3", "frame2+=4")
+    .to(copy3, 1, { y: 0, autoAlpha: 1, ease: "power3.out" }, "frame3")
+    .addLabel("frame4", "frame3+=4")
+    .to("#term", {color: "#0015ae"}, "frame4")
+    .to("#lastFrame", 0.6, { x: 0, ease: Power2.easeOut }, "frame4")
+    .to(["#copy4", "#cta"], 0.5, { autoAlpha:1, y: 0, ease: Power2.easeOut }, "frame4+=0.5")
+    .to('#shine', 0.5, {backgroundPosition: '535px 0px'}, 'frame4+=1')
+
 }
 function setRollover() {
   document
